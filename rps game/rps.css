@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    position: relative;
+}
+    
+    
+.heading{
+    position: absolute;
+    left: 420px;
+    color: white;
+ .h2{
+    display: inline;
+ }   
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+position: absolute;
+top: 100px;
+gap: 20px;
+}
+.scoreupdate{
+    position: absolute;
+    top: 300px; 
+    color: white;
+}
+
+
+.paper_button:hover,.rock_button:hover,.scissors_button:hover,.reset_button{
+    cursor: pointer;
+}
+.paper_button,.rock_button,.scissors_button,.reset_button{
+width: 150px;
+height: 150px;
+background: none;
+border-color:white;
+color: white;
+border-radius: 100px;
+}
+.rockicon,.papericon,.scissorsicon,.reseticon{
+    width: 75px;
+
+}
+.js-moves,.js-result,.js-score{
+    font-size: 25px;
+}
+
