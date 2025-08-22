@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="proj.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargo Packing System</title>
+</head>
+<body>
+    <div class="container">
+        <marquee class="marq" >Cargo Packing System</marquee>
+        <h2>Add Cargo Item</h2>
+        <div class="input-section">
+            <input type="text" id="itemName" placeholder="Enter name of item" required>
+            <input type="number" id="itemWeight" placeholder="Enter weight of item" required>
+            <input type="number" id="itemValue" placeholder="Enter value of item" required>
+            <button onclick="addItem()">Add Item</button>
+        </div>
+        <h2>Set Truck Capacity</h2>
+        <div class="input-section2">
+            <input type="number" id="truckCapacity" placeholder="Enter Truck's Max Capacity" required>
+            <button onclick="calculateOptimalCargo()">Calculate Optimal Cargo</button>
+        </div>
+        <h2>List of items:</h2>
+        <ul id="itemList"></ul>
+        <h2>Optimal Cargo Selection:</h2>
+        <div id="result"></div>
+        <div class="buttons">
+        <button class="resetbutton" onclick="reset()">Reset</button>
+        <button class="startbtn">Start</button>
+        </div>
+    </div>
+    <script src="proj.js"></script>
+</body>
+</html>
